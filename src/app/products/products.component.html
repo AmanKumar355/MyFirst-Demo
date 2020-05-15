@@ -1,0 +1,23 @@
+<header style="background-color:wheat; padding: 10px; text-align: center;">
+  <h1>{{title}}</h1>
+
+</header>
+<article>
+  <table class="col-md-5 table table-striped table-hover table-primary mx-auto">
+    <tr class="bg-warning">
+      <th>Product ID</th>
+      <th>Product name</th>
+      <th>Price</th>
+      <th>Offer Price</th>
+      <th>Category</th>
+    </tr>
+    <tr *ngFor = "let p of prods">
+      <td>{{p.pid}}</td>
+      <td>{{p.pname | titlecase}}</td>
+      <td>{{p.price | number:'.2-2'}}</td>
+      <td>{{p.price | number:'.2-2'}}</td>
+      <td>{{p.cat | uppercase}}</td>
+     
+    </tr>
+  </table>
+</article>

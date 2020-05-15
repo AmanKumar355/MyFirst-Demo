@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header style="background-color:wheat; padding: 10px; text-align: center;">
+  <h1>{{title}}</h1>
+</header>
+
+<body>
+  <table class="col-md-5 table table-striped table-hover table-primary table-bordered mx-auto">
+    <tr class="bg-warning">
+      <th>Book ID</th>
+      <th>Book Title</th>
+      <th>Year</th>
+      <th>Author</th>
+    </tr>
+    <tr *ngFor = "let b of books">
+      <td>{{b.id}}</td>
+      <td>{{b.title}}</td>
+      <td>{{b.year}}</td>
+      <td>{{b.author}}</td>
+    
+    </tr>
+  </table>
+</body>
